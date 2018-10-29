@@ -1,7 +1,8 @@
 /*Proyect 1: ALOHA HOMEPAGE | Jonathan de la Mora*/
 
 /*--- MOBILE ---*/
-@media only screen and (min-width : 320px) and (max-width : 600px) {
+
+@media only screen and (min-width : 320px) and (max-width : 425px) {
 
 };
 
@@ -30,7 +31,6 @@ body {
   max-width: 120px;
   order: 1;
 }
-
 
 .menu ul{
   padding-bottom: 2%;
@@ -74,13 +74,12 @@ nav{
 
 .menu a:hover { color:#9e3c34; }
 
-
 .divcart{
   order: 2;
 }
 .cart{
   width: 50px;
-  }
+}
 
 .cart-number{
   width: 5px;
@@ -91,7 +90,7 @@ nav{
 } 
 
 
-/*--- BANNER --- *missing gray image, put images on top of each other and change font in text*/
+/*--- BANNER --- */
 
 .banner{
   height: 400px;
@@ -119,7 +118,6 @@ nav{
   text-transform: uppercase;
   font-size: 1rem;
   padding-bottom: 2%;
-
 }
 
 .season2019{
@@ -339,19 +337,19 @@ nav{
   }
 } 
 
+
 /*---NEWSLETTER---*/
 
 .newsletter{
-  background-image: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.308) 0,rgba(0,0,0,.15)),
                     url("../images/wave-bkgd.jpg");
-  background-position: contain;
   padding-bottom: 3.5rem;
+  background-size: cover;
+  background-position: bottom;
   background-repeat: no-repeat;
   max-height: 340px;
-}
-
-.wave{
-  position: center;
+  position:relative;
+  min-height: 250px; 
 }
 
 .wave h1{
@@ -362,8 +360,8 @@ nav{
   text-align: center;
   padding-bottom: 8%;
   color: white;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
@@ -372,9 +370,6 @@ nav{
   font-style: normal;
   font-weight: 800;
   color: white;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
-
 }
 
 .wave{
@@ -393,37 +388,41 @@ nav{
   text-align: center;
   position: relative;
   color: white;
+  line-height: 1.7em; 
+  font-weight: 300;
+  text-shadow: 1px 1px 3px hsla(0,0%,39%,.8);
 }
 
 .suscription{
-  border: 25px;
-  position: relative;
-  position: center;
-}
-
-form{
   font-family: 'Raleway Web' ,sans-serif;
   display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  width: 50%;
+  justify-content: center;
   border-radius: 25px;
+  min-width: 100px;
+}
+
+input{
+  border-radius: 25px;
+  border: 0;
 }
 
 input[type=email]{
-  width: 100%;
-  border-radius: 25px;
-  border: 0;
-  padding: .5rem 1.75rem;
-  padding-left: 150px;
-
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
 
-input[type=submit]{
-  border-radius: 25px;
-  border: 0;
+input[type=Suscribe]{
+  color: white;
+  border: none;
+  background-color: #e2574c;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
+
 
 /*---FOOTER---*/
 
@@ -474,7 +473,7 @@ p.address{
 
   /* --- TABLET--- */
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 426px) and (max-width : 600px) {
     
     .categories{
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -554,10 +553,18 @@ p.address{
     }
   }
 
-
   /* --- DESKTOP--- */
 
-  @media only screen and (min-width: 1240px) {
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    
+    .divcart{
+      order: 3;
+    }
+  }
+
+
+    /* --- MORE THAN DESKTOP--- */
+  @media only screen and (min-width: 1240px) and 1240px {
     
     .divcart{
       order: 3;
