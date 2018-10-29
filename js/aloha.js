@@ -5,3 +5,5 @@ $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: true
   });
+
+console.log("test");
