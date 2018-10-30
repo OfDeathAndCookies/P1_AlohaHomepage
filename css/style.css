@@ -399,7 +399,14 @@ input[type=email]{
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+.subscribeText{
   font-size: 14px;
+  font-family: 'Raleway Web' ,sans-serif;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: left;
 }
 
 .subscribeBtn{
@@ -408,10 +415,13 @@ input[type=email]{
   background-color: #e2574c;
   text-align: center;
   text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: inline-block;
   font-size: 14px;
   position: relative;
   left: -66px;
+  font-family: 'Raleway Web' ,sans-serif;
 }
 
 
@@ -422,7 +432,6 @@ input[type=email]{
   width: 100%;
   font-family: 'Playfair Display', Arial, sans-serif;
   background-position: absolute;
-  padding: 0;
   margin-top: .5rem;
 }
 
@@ -462,13 +471,23 @@ p.address{
   color: #969696;
 }
 
+
+
 /*---   T   A   B   L   E   T   ---*/
 
   @media only screen and (min-width : 600px) {
-   .header
-    {
-      flex-wrap: nowrap;
-  }
+   
+    .header{
+      flex-wrap: nowrap; 
+    } 
+    
+    .menu li {
+      font-size: 20px;
+    }
+
+    body{
+        font-size: 16px;
+    }
    
     .logo{
       max-width: 120px;
@@ -481,6 +500,10 @@ p.address{
 
     .menu ul{
       border: none;
+    }
+
+    .menu li{
+      font-size:.9rem;
     }
 
     .divcart{
@@ -565,10 +588,20 @@ p.address{
     .carousel-cell {
       width: 50%;
     }
-  
-  }
 
-  /* --- DESKTOP--- */
+    .info p{
+      text-align: left;
+    }
+
+    .info{
+      padding-left: 5rem;
+      padding-top: 1rem;
+    }
+
+
+  
+
+/*---   D   E   S   K   T   O   P   ---*/
 
   @media only screen and (min-width: 1024px) {
 
@@ -656,7 +689,4 @@ p.address{
 
 }
 
-
-    /* --- MORE THAN DESKTOP--- */
-  @media only screen and (min-width: 1240px) {
-  }
+}
