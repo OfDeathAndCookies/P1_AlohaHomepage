@@ -6,4 +6,12 @@ $('.main-carousel').flickity({
     contain: true
   });
 
-console.log("test");
+  $(".subscribeBtn").click(function(){
+    const inputValue = $(".subscribeText")[0].value;
+    if (inputValue.length > 0) {
+      alert("Thanks for subscribing!");
+    } else {
+      alert("Please enter an email.");
+    }
+});
+

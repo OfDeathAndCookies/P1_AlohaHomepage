@@ -1,15 +1,13 @@
 /*Proyect 1: ALOHA HOMEPAGE | Jonathan de la Mora*/
 
-/*--- MOBILE ---*/
-
-@media only screen and (min-width : 320px) and (max-width : 425px) {
-
-};
+/*---   M   O   B   I   L   E   ---*/
 
 /*---HEADER---*/
 
 body {
   font-family: 'Raleway light', Arial, sans-serif;
+  font-size: 14px;
+  color: #2d2d2d;
 }
 
 .header{
@@ -131,6 +129,7 @@ nav{
 /*---DESCRIPTION---*/
 
 .description{
+  margin: 0 auto;
   padding-top: 8%;
   padding-bottom: 8%;
   max-width: 600px;
@@ -265,18 +264,13 @@ nav{
 /*---FEATURED---*/
 
 .most-loved{
+  margin: 0 auto;
   padding-top: 8%;
   padding-bottom: 8%;
-  max-width: 600px;
+  /* max-width: 600px; */
   display: flex;
   justify-content: center; 
   min-width: 320px;
-  margin: 1rem;
-}
-
-.carousel{
-  box-sizing: border-box;
-  outline: none;
 }
 
 .most-loved h1{
@@ -326,16 +320,10 @@ nav{
 
 * { box-sizing: border-box; }
 
-.carousel{
-  display: flex;
-  height: -300px;
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
 }
-
- @media screen and ( min-width: 768px ) {
-  .carousel img {
-    height: 400px;
-  }
-} 
 
 
 /*---NEWSLETTER---*/
@@ -393,12 +381,13 @@ nav{
   text-shadow: 1px 1px 3px hsla(0,0%,39%,.8);
 }
 
-.suscription{
+.subscription{
   font-family: 'Raleway Web' ,sans-serif;
   display: flex;
   justify-content: center;
   border-radius: 25px;
   min-width: 100px;
+  margin-left: 66px;
 }
 
 input{
@@ -413,7 +402,7 @@ input[type=email]{
   font-size: 14px;
 }
 
-input[type=Suscribe]{
+.subscribeBtn{
   color: white;
   border: none;
   background-color: #e2574c;
@@ -421,6 +410,8 @@ input[type=Suscribe]{
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  position: relative;
+  left: -66px;
 }
 
 
@@ -471,13 +462,35 @@ p.address{
   color: #969696;
 }
 
-  /* --- TABLET--- */
+/*---   T   A   B   L   E   T   ---*/
 
-  @media only screen and (min-width: 426px) and (max-width : 600px) {
-    
+  @media only screen and (min-width : 600px) {
+   .header
+    {
+      flex-wrap: nowrap;
+  }
+   
+    .logo{
+      max-width: 120px;
+      order: 1;
+    }
+
+    .menu{
+      order: 2;
+    }
+
+    .menu ul{
+      border: none;
+    }
+
+    .divcart{
+      order: 4;
+    }  
+
     .categories{
       grid-template-columns: 1fr 1fr 1fr 1fr;
       min-height: 300px;
+      grid-auto-rows: 200px;
     }
   
     .mens{
@@ -500,8 +513,8 @@ p.address{
     
     .sale{
       background-image:url("../images/sale-category.jpg");
-      grid-column-start: 4;
-      grid-column-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 2;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -518,8 +531,8 @@ p.address{
     
     .glasses{
       background-image:url("../images/glasses-category.jpg");
-      grid-column-start: 2;
-      grid-column-end: 3;
+      grid-column-start: 4;
+      grid-column-end: 5;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -545,28 +558,105 @@ p.address{
     .divcart{
       order: 3;
     }
-  
-    .menu ul{
-      border-top: 0px;
-      padding-top: .5rem;
-      text-align: center;
+
+    .main-carousel {
+      width: 100vw;
     }
+    .carousel-cell {
+      width: 50%;
+    }
+  
   }
 
   /* --- DESKTOP--- */
 
-  @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    
-    .divcart{
-      order: 3;
-    }
+  @media only screen and (min-width: 1024px) {
+
+  .main-carousel {
+      width: 100vw;
+  } 
+  .carousel-cell {
+    width: 25%;
   }
+
+    
+  body {
+
+    font-family: 'Raleway light', Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+
+  .logo{
+    max-width: 120px;
+    order: 1;
+  }
+  
+  .menu ul{
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .menu ul li a{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: center;
+    color: #e2574c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  
+  .menu li{
+    display: inline-block;
+    justify-content: space-between;
+  }
+    
+  nav{
+    width: 100%;
+    order: 2;
+  }
+  
+  .menu ul{
+    text-align: center;
+    justify-content: space-between;
+    /* cleaning styles */
+    padding-left: 0;
+    width: 100%;
+  }
+    
+  .menu a:hover { color:#b64036; }
+  
+  .divcart{
+    order: 3;
+  }
+  .cart{
+    width: 50px;
+  }
+  
+  .cart-number{
+    width: 5px;
+    height: 5px;
+    color: red;
+    display:flex;
+    align-content: flex-end;
+  } 
+
+  .categories{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 300px;
+    grid-auto-rows: 300px;
+  }
+
+}
 
 
     /* --- MORE THAN DESKTOP--- */
-  @media only screen and (min-width: 1240px) and 1240px {
-    
-    .divcart{
-      order: 3;
-    }
+  @media only screen and (min-width: 1240px) {
   }
