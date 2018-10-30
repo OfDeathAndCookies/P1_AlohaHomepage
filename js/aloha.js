@@ -8,7 +8,7 @@ $('.main-carousel').flickity({
 
   $(".subscribeBtn").click(function(){
     const inputValue = $(".subscribeText")[0].value;
-    if (inputValue.length > 0) {
+    if (inputValue.length === (0 && '/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i') ) {
       alert("Thanks for subscribing!");
     } else {
       alert("Please enter an email.");
