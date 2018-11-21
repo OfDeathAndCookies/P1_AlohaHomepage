@@ -32,10 +32,10 @@
     </div>
     <nav class="menu">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#featured">Featured</a></li>
-        <li><a href="#updates">Updates</a></li>
+        <li><a href="#about" aria-label="Learn More About the Company">About</a></li>
+        <li><a href="#shop" aria-label="Shop some items">Shop</a></li>
+        <li><a href="#featured" aria-label="Look at the featured items">Featured</a></li>
+        <li><a href="#updates" aria-label="Sign up with your email for updates">Updates</a></li>
       </ul>
     </nav>
   </header>
@@ -49,14 +49,14 @@
   </section>
 
   <!--DESCRIPTION-->
-  <section class="description">
+  <section class="description" id="about">
     <h1>Hand-Crafted <span class="styles">Styles</span></h1>
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
       current selection of products or sign-up for updates below.</p>
   </section>
 
   <!--CATEGORIES-->
-  <section class="categories">
+  <section class="categories" id="shop">
     <div class="mens text"><a>men's</a></div>
     <div class="trends text"><a>trends</a></div>
     <div class="glasses text"><a>glasses</a></div>
@@ -66,8 +66,8 @@
   </section>
 
   <!--FEATURED-->
-  <section class="most-loved">
-    <div>
+  <section class="most-loved" id="featured">
+    <!-- <div> -->
       <h1>Most-Loved <span class="styles2">Products</span></h1>
       <div class="main-carousel">
         <div class="carousel-cell">
@@ -118,12 +118,12 @@
           <p class="name">Cotton Yellow T-shirt</p>
           <p class="price">$39.00</p>
         </div>
-      </div>
+      <!-- </div> -->
   </section>
 
   <!--NEWSLETTER-->
-  <br/><br/>
-  <section class="newsletter">
+  <!-- <br/><br/> -->
+  <section class="newsletter" id="updates">
     <div class="wave">
       <h1>Sign up for <span class="styles3">Updates</span></h1>
       <p>Stay updated on our latest product releases, be first to find out about upcoming
@@ -139,7 +139,7 @@
   <!--FOOTER-->
   <footer class="footer">
     <div>
-      <br><br><br>
+      <!-- <br><br><br> -->
       <div class="info">
       <p>© 2019 Aloha Apparel Co.</p>
       <p>Powered by HTML and CSS.</p>
@@ -149,7 +149,7 @@
       <p class="address">1490 W Broadway</p>
       <p class="address">Vancouver, BC, Canada</p>
       </div>
-      <br><br>
+      <!-- <br><br> -->
       <div class="media">
         <ul>
           <li>
@@ -169,10 +169,11 @@
           </li>
         </ul>
       </div>
-      <br><br><br>
+      <!-- <br><br><br> -->
     </div>
   </footer>
   <!--Javascript + jQuery-->
+  <script src="js/tota11y.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>
   <script src="js/aloha.js"></script>
