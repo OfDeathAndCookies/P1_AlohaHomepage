@@ -10,6 +10,11 @@ body {
   color: #2d2d2d;
 }
 
+.hideButRead{
+  position: absolute;
+  top: -1000000px;
+}
+
 .header{
   color: white;
   /* position: fixed; */
