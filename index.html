@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/flickity.css">
   <!--includes flickity-->
 
-  <title>Project 1: Aloha Homepage</title>
+  <title>Aloha Apparel Co.</title>
 </head>
 
 <body>
@@ -123,23 +123,24 @@
 
   <!--NEWSLETTER-->
   <br/><br/>
-  <section class="newsletter">
-    <div class="wave">
-      <h1>Sign up for <span class="styles3">Updates</span></h1>
-      <p>Stay updated on our latest product releases, be first to find out about upcoming
-        sales, and get free style tips from our blog. Unsubscribe at any time.
-      </p>
-      <form class="subscription">
-        <input id="email" class="subscribeText" type="email" name="your-email" placeholder="E-mail">
-        <input id="suscribe" class="subscribeBtn" type="button" name="suscribe" value="Suscribe">
-      </form>
+
+  <section id="subscribe" class="subscribe">
+    <div class="container-sign-up">
+      <h1 class="sign-up"><span>Sign-up for</span> Updates</h1>
+      <p class="subscribe--p">
+          Stay updated on our latest product releases, be first to find out about upcoming 
+          sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+        <form action="#" method="POST" class="subscribe--form">
+            <input type="email" placeholder="Your Email" class="subscribe--email">
+            <button id="#" type="submit" class="subscribe--submit">Subscribe</button>
+        </form>
     </div>
-  </section>
+</section>
 
   <!--FOOTER-->
   <footer class="footer">
-    <div>
-      <br><br><br>
+    <div class="f-content-wrapper">
+
       <div class="info">
       <p>© 2019 Aloha Apparel Co.</p>
       <p>Powered by HTML and CSS.</p>
@@ -149,33 +150,24 @@
       <p class="address">1490 W Broadway</p>
       <p class="address">Vancouver, BC, Canada</p>
       </div>
-      <br><br>
+
       <div class="media">
         <ul>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          </li>
+          <li><a href="#"><i class="fab fa-facebook"></i> <span class="network-name">Facebook</span></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> <span class="network-name">Twitter</span></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> <span class="network-name">Instagram</span></a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i> <span class="network-name">Pinterest</span></a></li>
+          <li><a href="#"><i class="fab fa-google-plus"></i> <span class="network-name">Google+</span></a></li>
         </ul>
       </div>
-      <br><br><br>
     </div>
-  </footer>
+
   <!--Javascript + jQuery-->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>
   <script src="js/aloha.js"></script>
+
+</footer>
 
 </body>
 

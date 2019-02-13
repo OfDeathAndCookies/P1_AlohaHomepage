@@ -18,7 +18,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 4.5%;
+  padding-top: 3rem;
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 3%;
@@ -328,7 +328,7 @@ nav{
 
 /*---NEWSLETTER---*/
 
-.newsletter{
+/* .suscribe{
   background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.308) 0,rgba(0,0,0,.15)),
                     url("../images/wave-bkgd.jpg");
   padding-bottom: 3.5rem;
@@ -338,7 +338,7 @@ nav{
   max-height: 340px;
   position:relative;
   min-height: 250px; 
-}
+} */
 
 .wave h1{
   font-family: 'Playfair Display', Arial, sans-serif;
@@ -396,7 +396,8 @@ input{
 }
 
 input[type=email]{
-  text-align: center;
+  text-align: left;
+  font-weight: 200;
   text-decoration: none;
   display: inline-block;
 }
@@ -425,14 +426,120 @@ input[type=email]{
 }
 
 
+.container {
+  max-width: 1240px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+
+.subscribe {
+  height: 350px;
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.308) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.subscribe--title {
+  color: #fff;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.subscribe--p {
+  line-height: 2rem;
+  padding:0rem .2rem 1.5rem .2rem;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 1.15rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  font-family: 'Raleway' ,sans-serif;
+}
+
+.subscribe--form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe--email {
+  width: 320px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  margin-right: -120px;
+}
+
+.subscribe--email::placeholder {
+  padding-left: 1rem;
+}
+
+.subscribe--submit {
+  background-color: #e2574c;
+  height: 32px;
+  border-radius: 15px;
+  font-size: .8rem;
+  border: none;
+  color: #fff;
+  position: relative;
+  width: 115px;
+  cursor: pointer;
+}
+
+.subscribe--submit:hover {
+  background-color: #b64036;
+}
+
+.sign-up{
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 800;
+  color: white;
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.sign-up span{
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 800;
+  color: white;
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.container-sign-up{
+  padding-top: 4.2rem;
+  width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*---FOOTER---*/
 
 .footer {
   background-color: #242424;
   width: 100%;
   font-family: 'Playfair Display', Arial, sans-serif;
-  background-position: absolute;
+  background-position: relative;
   margin-top: .5rem;
+  padding: 2rem 0;
 }
 
 .footer p, .footer a{
@@ -441,35 +548,26 @@ input[type=email]{
   font-size: 85%;
   text-align: center;
   line-height: 20px;
+  font-family: 'Raleway' ,sans-serif;
 }
 
-.media li{
-  align-content: center;
-  text-align: center;
-}
-
-.media ul{  
+.f-content-wrapper{
   display: flex;
-  align-content: center;
-  justify-content: center;
-  color: white; 
-  letter-spacing: 15px;
-}
-
-.media a{
-  display: media;
-  margin: 0px;
-}
-
-.media i{
-height: 25px;
-width: 28px;
-
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  padding: 0 4rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 p.address{
   color: #969696;
 }
+
 
 
 
@@ -589,15 +687,22 @@ p.address{
       width: 50%;
     }
 
-    .info p{
-      text-align: left;
+    .info p, .info a{
+      text-align: left;     
+      font-family: 'Playfair Display', Arial, sans-serif;
     }
 
-    .info{
-      padding-left: 5rem;
+    .info {
       padding-top: 1rem;
     }
 
+
+
+  .media ul li{
+    padding: .4rem 0;
+    font-weight: 200;
+    font-size:1.1rem;
+  }
 
   
 
@@ -641,7 +746,7 @@ p.address{
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Raleway', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1.3rem;
     padding-left: .5rem;
     padding-right: .5rem;
   }
